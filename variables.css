@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{--primary:#e11a45;--secondary:#e3afc9;--background:#efecd7;--accent:#edc92c;}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width:100vw;
+    min-height:100vh;
+    border:2px solid #f0f0f0;
+    gap: 20px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:75px;
+    height: 75px;
+    background-color: var(--secondary);
+    font-size: large;
+}
+.box{
+    display: flex;
+    align-items: stretch;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #c3c3c3;
+    padding: 5px;
+    gap: 10px;
+}
+.box1{
+    background-color: var(--primary);
+    flex:1 1 80px;
+}
+.box2{
+    background-color: var(--secondary);
+    flex:1 1 80px;
+}
+.box3{
+    background-color: var(--background);
+    flex:1 1 80px;
+}
+.box4{
+    background-color: var(--accent);
+    flex:1 1 80px;
+}
+button::before{content: "→";font-size: 24px;}
+.card{
+    width:300px;
+    height: 300px;
+    position: relative;
+    background-color: var(--background);
+    border: 2px solid #cdcab5;
+}
+.card::after{content: "جدید";position: absolute;top: 10px;right:10px;background-color: var(--primary);padding: 4px 8px;font-size: large;}
